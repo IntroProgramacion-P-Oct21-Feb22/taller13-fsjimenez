@@ -27,10 +27,10 @@ public class Ejercicio04 {
             while (i <= 4) {
                 System.out.printf("Datos para usuario %d\n", i);
 
-                System.out.println("Cuantas notas quiere agregar al arreglo");
+                System.out.println("Cuantos sueldos quiere agregar al arreglo");
                 numeroDatosArreglo = entrada.nextInt();
                 if (numeroDatosArreglo < 0 || numeroDatosArreglo > 5) {
-                    throw new Exception("El número de notas deben estar "
+                    throw new Exception("El número de sueldos deben estar "
                             + "entre 0 y 5");
                 }
                 arregloSueldos = new double[numeroDatosArreglo];
@@ -39,16 +39,16 @@ public class Ejercicio04 {
                     System.out.printf("agregue nota %d para usuario %d\n",
                             j, i);
                     sueldo = entrada.nextDouble();
-                    if (sueldo > 10 || sueldo < 0) {
-                    throw new Exception("El valor de la calificacion debe estar"
-                            + " entre 0 y 10");
-                    }
+                    if (sueldo > 1000 || sueldo < 0) {
+                    throw new Exception("El valor del sueldo debe estar"
+                            + " entre 0 y 1000");
+                }
                     arregloSueldos[j] = sueldo;
                     j = j + 1;
                 }
 
                 for (int k = 0; k < arregloSueldos.length; k++) {
-                    System.out.printf("Nota ingresada: %.3f\n", arregloSueldos[k]);
+                    System.out.printf("Sueldo ingresado: %.3f\n", arregloSueldos[k]);
                 }
 
                 i = i + 1;
