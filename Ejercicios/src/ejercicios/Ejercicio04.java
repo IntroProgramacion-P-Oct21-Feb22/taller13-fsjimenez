@@ -36,7 +36,7 @@ public class Ejercicio04 {
                 arregloSueldos = new double[numeroDatosArreglo];
                 j = 0;
                 while (j < arregloSueldos.length) {
-                    System.out.printf("agregue nota %d para usuario %d\n",
+                    System.out.printf("agregue sueldo %d para usuario %d\n",
                             j, i);
                     sueldo = entrada.nextDouble();
                     if (sueldo > 1000 || sueldo < 0) {
